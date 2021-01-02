@@ -41,7 +41,7 @@ for i in range(0,20):
         
         
 # -------------------------------------------      DM DATA      ----------------------------------------------------------#
-f2 = open('..t/60TeV_DM_Count.txt')
+f2 = open('../60TeV_DM_Count.txt')
 triplets2=f2.read().split()
 for i in range(0,len(triplets2)): triplets2[i]=triplets2[i].split(',')
 C=np.array(triplets2, dtype=np.float)
