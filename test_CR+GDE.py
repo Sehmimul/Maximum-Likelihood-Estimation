@@ -8,7 +8,7 @@ import scipy, math
 
 # -------------------------------------------      CR DATA      ----------------------------------------------------------#
 
-f = open('cnt_CR/cnt_CR/60TeV_CR_count.txt')
+f = open('../60TeV_CR_count.txt')
 triplets=f.read().split()
 for i in range(0,len(triplets)): triplets[i]=triplets[i].split(',')
 A=np.array(triplets, dtype=np.float)
@@ -25,7 +25,7 @@ for i in range(0,20):
         
 # -------------------------------------------      GDE DATA      ----------------------------------------------------------#
 
-f1 = open('cnt_GDE/cnt_GDE/60TeV_gde_Count.txt')
+f1 = open('../60TeV_gde_Count.txt')
 triplets_1=f1.read().split()
 for i in range(0,len(triplets_1)): triplets_1[i]=triplets_1[i].split(',')
 B=np.array(triplets_1, dtype=np.float)
@@ -41,7 +41,7 @@ for i in range(0,20):
         
         
 # -------------------------------------------      DM DATA      ----------------------------------------------------------#
-f2 = open('cnt_DM_Triplet/cnt_DM_Triplet/60TeV_DM_WW_Count.txt')
+f2 = open('..t/60TeV_DM_Count.txt')
 triplets2=f2.read().split()
 for i in range(0,len(triplets2)): triplets2[i]=triplets2[i].split(',')
 C=np.array(triplets2, dtype=np.float)
